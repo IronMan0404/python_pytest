@@ -1,3 +1,11 @@
+**Type this into your bash window/terminal**
+~~~~
+git clone https://github.com/IronMan0404/python_pytest.git
+1. change directory to "python_pytest"
+2. git fetch origin
+3. git checkout master
+~~~~
+"After Clone" 
 
 # Please install all required packages from requirements.txt file
 
