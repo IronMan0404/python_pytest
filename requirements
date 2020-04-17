@@ -1,6 +1,0 @@
-pip install requests
-pip install pylint
-pip install pytest
-pip install pytest-rerunfailures
-pip install pytest-html
-pip install pytest-parallel

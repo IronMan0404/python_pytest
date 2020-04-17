@@ -15,4 +15,4 @@ def get_the_id_value_from_get_api():
     data_length = len(data["data"])
     for i in range(data_length):
         id_list.append(data["data"][i]["id"])
-    return id_list, response
+    return id_list
