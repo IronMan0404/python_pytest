@@ -15,3 +15,5 @@ gen
 .idea/sonarlint/
 .idea/vcs.xml
 api-auto/Include/
+api-auto
+api-auto/*
