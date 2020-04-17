@@ -1,3 +1,5 @@
+__author__ = 'Bhargava Batchu'
+
 import json
 import input_data.api_endpoints.url_data as url_data
 from utils.genaral_requests import get_response_from_api

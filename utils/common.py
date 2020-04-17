@@ -1,3 +1,6 @@
+__author__ = 'Bhargava Batchu'
+
+
 # Print all errors
 def print_errors(error_list):
     for error in error_list:

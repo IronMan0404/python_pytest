@@ -4,6 +4,7 @@ __author__ = "Bhargava Batchu"
 import requests
 
 
+# Get Request
 def get_response_from_api(url, header):
     """
     This function will return the response
@@ -19,6 +20,7 @@ def get_response_from_api(url, header):
         raise ValueError(response.content)
 
 
+# Post Request
 def post_request_to_api(url, headers, data):
     """
     This Function can handle the post request
