@@ -1,0 +1,3 @@
+""" Test Data"""
+STATUS_CODE_200 = 200
+EXPECTED_VALUE = 7
