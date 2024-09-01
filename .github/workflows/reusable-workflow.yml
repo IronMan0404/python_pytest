@@ -1,0 +1,26 @@
+name: Reusable Workflow
+
+on:
+  workflow_call:
+    inputs:
+      run_next_job:
+        description: "Whether to run the next job regardless of pass/fail"
+        required: true
+        type: boolean
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run some tests
+      run: |
+        echo "Running tests..."
+        exit 1  # Simulate a failure
+
+  conditional-job:
+    needs: test-job
+    if: ${{ needs.test-job.result == 'success' || inputs.run_next_job == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run only if previous job succeeded or input is true
+      run: echo "Running conditional job because test-job succeeded or run_next_job is true."
