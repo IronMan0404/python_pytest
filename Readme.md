@@ -27,4 +27,6 @@ pytest --workers auto
 ~~~~
 `pytest --workers auto --reruns 2 --reruns-delay 1 --html=pytest_selenium_test_report.html tests/test_get_api.py  -v`
 ~~~~
+
+
  
