@@ -1,0 +1,16 @@
+name: Manual Trigger Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_next_job:
+        description: "Run the next job regardless of test-job success or failure"
+        required: true
+        default: false
+        type: boolean
+
+jobs:
+  call-reusable:
+    uses: ./.github/workflows/reusable-workflow.yml
+    with:
+      run_next_job: ${{ github.event.inputs.run_next_job }}
